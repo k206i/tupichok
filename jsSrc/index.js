@@ -9,6 +9,8 @@ import '../cssSrc/index.styl';
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('development mode, пацаны. ');
+} else {
+  console.log('Упоротость и качество!');
 }
 
 const store = configureStore();

@@ -9,11 +9,11 @@ import {storageAchievementData} from '../Storage/StorageAchievementData';
 export default function UserList(props) {
 
   let sortcitizens = (a, b) => {
-    const currentDateA = (a.isOnline)
+    const currentDateA = (!a.endDate)
       ? new Date()
       : a.endDate;
 
-    const currentDateB = (b.isOnline)
+    const currentDateB = (!b.endDate)
       ? new Date()
       : b.endDate;
 
@@ -25,7 +25,7 @@ export default function UserList(props) {
   // Генерация карточки каждого тупикчанина
   let citizensArr = citizens.map((user, i) => {
 
-    const currentDate = (user.isOnline)
+    const currentDate = (!user.endDate)
       ? new Date()
       : user.endDate;
 
@@ -41,7 +41,7 @@ export default function UserList(props) {
           : null;
 
     // Генерация ачивок
-    let achievements = user.achievements.map((achievement) => {
+    let achievements = user.achievements.map((achievement, i) => {
 
       let achievementData = storageAchievementData.find((element) => (
         element.name == achievement
@@ -66,7 +66,7 @@ export default function UserList(props) {
       <div className='citizen' key={`${user.username}${i}`}>
         <img className='citizen__userpic' src={user.userpic} />
         <div className={`citizen__status ${
-          user.isOnline
+          !user.endDate
             ? 'online'
             : null
           }`} />
@@ -81,7 +81,7 @@ export default function UserList(props) {
         </div>
         <div className='citizen__status-text'>
           в сети: с {`${user.startDate.getMonth() + 1}.${user.startDate.getFullYear()} `}
-          {!user.isOnline &&
+          {user.endDate &&
             <span>
               по {`${user.endDate.getMonth() + 1}.${user.endDate.getFullYear()}`}
             </span>}
