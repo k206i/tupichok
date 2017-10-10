@@ -1,31 +1,25 @@
-'use strict';
-const { resolve } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  entry: './jsSrc/index.js',
+  module.exports = {
+    entry: {
+      app: './jsSrc/index.js'
+    },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Hot Module Replacement',
-      template: 'index.html',
+        title: 'Production',
+      template: './index.html',
       filename: 'index.html',
       inject: 'body'
     }),
-    new webpack.HotModuleReplacementPlugin() // Enable HMR
   ],
-
-  devServer: {
-    hot: true, // Tell the dev-server we're using HMR
-    contentBase: './dist',
-    publicPath: 'http://localhost:8080/'
-  },
-
   output: {
     filename: 'bundle.js',
-    path: resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'dist')
   },
-
   module: {
     rules: [
       {
@@ -49,5 +43,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-  }
+  },
 };
