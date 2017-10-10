@@ -3,12 +3,12 @@
  */
 
 import React from 'react';
-import {sitizens} from './UserListData';
+import {citizens} from './UserListData';
 import {storageAchievementData} from '../Storage/StorageAchievementData';
 
 export default function UserList(props) {
 
-  let sortSitizens = (a, b) => {
+  let sortcitizens = (a, b) => {
     const currentDateA = (a.isOnline)
       ? new Date()
       : a.endDate;
@@ -20,10 +20,10 @@ export default function UserList(props) {
     return  (currentDateB.getTime() - b.startDate.getTime()) - (currentDateA.getTime() - a.startDate.getTime());
   };
 
-  sitizens.sort(sortSitizens);
+  citizens.sort(sortcitizens);
 
   // Генерация карточки каждого тупикчанина
-  let sitizensArr = sitizens.map((user, i) => {
+  let citizensArr = citizens.map((user, i) => {
 
     const currentDate = (user.isOnline)
       ? new Date()
@@ -63,23 +63,23 @@ export default function UserList(props) {
     );
 
     return (
-      <div className='sitizen' key={`${user.username}${i}`}>
-        <img className='sitizen__userpic' src={user.userpic} />
-        <div className={`sitizen__status ${
+      <div className='citizen' key={`${user.username}${i}`}>
+        <img className='citizen__userpic' src={user.userpic} />
+        <div className={`citizen__status ${
           user.isOnline
             ? 'online'
             : null
           }`} />
-        <div className='sitizen__level'>
+        <div className='citizen__level'>
           Уровень
-          <span className={`sitizen__level-count ${levelColor}`}>
+          <span className={`citizen__level-count ${levelColor}`}>
             {currentUserLevel}
           </span>
         </div>
-        <div className='sitizen__username'>
+        <div className='citizen__username'>
           {user.username}
         </div>
-        <div className='sitizen__status-text'>
+        <div className='citizen__status-text'>
           в сети: с {`${user.startDate.getMonth() + 1}.${user.startDate.getFullYear()} `}
           {!user.isOnline &&
             <span>
@@ -124,8 +124,8 @@ export default function UserList(props) {
   });
   
   return (
-    <div className='sitizen__tab-pad'>
-      {sitizensArr}
+    <div className='citizen__tab-pad'>
+      {citizensArr}
     </div>
   )
 }

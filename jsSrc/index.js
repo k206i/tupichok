@@ -5,7 +5,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './Components/app';
 import configureStore from './Store/configureStore';
-import '../cssSrc/app.styl';
+import '../cssSrc/index.styl';
+
+if (process.env.NODE_ENV !== 'production') {
+  console.log('development mode, пацаны. ');
+}
 
 const store = configureStore();
 

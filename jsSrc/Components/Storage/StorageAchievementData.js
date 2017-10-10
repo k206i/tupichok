@@ -76,7 +76,7 @@ export const storageAchievementData = [
   },
   {
     name: 'radio',
-    image: '/images/radio.png',
+    image: 'images/radio.png',
     text: 'РАДИО МАКСИМ<br />за нескончаемый <br />бубнёж по теме<br />и без',
   },
 ];

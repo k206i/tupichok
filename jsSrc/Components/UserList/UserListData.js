@@ -2,7 +2,7 @@
  * Жители тупичка. В произвольном порядке. Не забываем, что в new Date отсчёт месяцев начинается с "0"
  */
 
-export const sitizens = [
+export const citizens = [
   {
     userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/130920171736/160722164945/sveta.png',
     username: 'driwetka',
