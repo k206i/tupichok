@@ -8,7 +8,6 @@ export const citizens = [
     username: 'driwetka',
     startDate: new Date(2010, 9),
     endDate: new Date(2014, 9),
-    isOnline: false,
     achievements: [
       'collective'
     ]
@@ -18,7 +17,6 @@ export const citizens = [
     username: 'kompot',
     startDate: new Date(2006, 8),
     endDate: null,
-    isOnline: true,
     achievements: [
       'kirovsk', 'micromachines', 'darts', 'collective'
     ]
@@ -28,7 +26,6 @@ export const citizens = [
     username: 'Toxu4',
     startDate: new Date(2006, 9),
     endDate: null,
-    isOnline: true,
     achievements: [
       'papa', 'micromachines', 'darts'
     ]
@@ -38,7 +35,6 @@ export const citizens = [
     username: 'k206i',
     startDate: new Date(2007, 1),
     endDate: null,
-    isOnline: true,
     achievements: [
       'papa', 'kirovsk', 'micromachines', 'darts', 'collective'
     ]
@@ -48,7 +44,6 @@ export const citizens = [
     username: 'Отец Василий',
     startDate: new Date(2007, 4),
     endDate: null,
-    isOnline: true,
     achievements: [
       'papa', 'father'
     ]
@@ -58,7 +53,6 @@ export const citizens = [
     username: 'mishenkovks',
     startDate: new Date(2009, 9),
     endDate: null,
-    isOnline: true,
     achievements: [
       'papa'
     ]
@@ -68,7 +62,6 @@ export const citizens = [
     username: 'DD',
     startDate: new Date(2011, 8),
     endDate: new Date(2017, 8),
-    isOnline: false,
     achievements: [
       'hernia'
     ]
@@ -78,7 +71,6 @@ export const citizens = [
     username: 'krabishe',
     startDate: new Date(2011, 3),
     endDate: new Date(2016, 6),
-    isOnline: false,
     achievements: [
       'yandex', 'papa', 'father'
     ]
@@ -88,9 +80,8 @@ export const citizens = [
     username: 'Mike Camino',
     startDate: new Date(2008, 8),
     endDate: new Date(2013, 9),
-    isOnline: false,
     achievements: [
-      'indecisive'
+      'indecisive', 'indecisive'
     ]
   },
   {
@@ -98,7 +89,6 @@ export const citizens = [
     username: 'Иринка',
     startDate: new Date(2011, 10),
     endDate: new Date(2017, 7),
-    isOnline: false,
     achievements: [
       'alone', 'collective', 'papa'
     ]
@@ -108,7 +98,6 @@ export const citizens = [
     username: 'kalan',
     startDate: new Date(2013, 5),
     endDate: new Date(2017, 6),
-    isOnline: false,
     achievements: [
       'yankee', 'collective', 'hernia', 'micromachines', 'papa'
     ]
@@ -118,7 +107,6 @@ export const citizens = [
     username: 'Kathy V',
     startDate: new Date(2014, 1),
     endDate: new Date(2016, 7),
-    isOnline: false,
     achievements: [
       'kirovsk'
     ]
@@ -128,7 +116,6 @@ export const citizens = [
     username: 'olyakirgizova',
     startDate: new Date(2014, 5),
     endDate: new Date(2017, 2),
-    isOnline: false,
     achievements: [
       'collective'
     ]
@@ -138,7 +125,6 @@ export const citizens = [
     username: 'Госпожа',
     startDate: new Date(2013, 9),
     endDate: new Date(2016, 1),
-    isOnline: false,
     achievements: [
       'kirovsk', 'collective'
     ]
@@ -148,7 +134,6 @@ export const citizens = [
     username: 'nfirex',
     startDate: new Date(2011, 5),
     endDate: new Date(2013, 10),
-    isOnline: false,
     achievements: [
       'kirovsk', 'micromachines', 'collective'
     ]
@@ -158,7 +143,6 @@ export const citizens = [
     username: 'Иршатыч',
     startDate: new Date(2010, 9),
     endDate: new Date(2013, 3),
-    isOnline: false,
     achievements: [
       'hernia', 'micromachines', 'papa', 'father'
     ]
@@ -168,7 +152,6 @@ export const citizens = [
     username: 'busysumm3r',
     startDate: new Date(2015, 0),
     endDate: new Date(2017, 8),
-    isOnline: false,
     achievements: [
       'radio', 'hernia', 'micromachines'
     ]
@@ -178,7 +161,6 @@ export const citizens = [
     username: 'Просто Рудковский',
     startDate: new Date(2015, 8),
     endDate: null,
-    isOnline: true,
     achievements: [
       'fail', 'kirovsk', 'micromachines', 'hernia'
     ]
@@ -188,7 +170,6 @@ export const citizens = [
     username: 'Влада',
     startDate: new Date(2014, 10),
     endDate: new Date(2016, 2),
-    isOnline: false,
     achievements: [
       'yandex', 'hernia'
     ]
