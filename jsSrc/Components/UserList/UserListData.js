@@ -4,7 +4,7 @@
 
 export const citizens = [
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/130920171736/160722164945/sveta.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/sveta.png',
     username: 'driwetka',
     startDate: new Date(2010, 9),
     endDate: new Date(2014, 9),
@@ -13,7 +13,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/160721161512/160722173233/kolyan.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/kolyan.png',
     username: 'kompot',
     startDate: new Date(2006, 8),
     endDate: null,
@@ -22,7 +22,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/150609123427/160722171930/toxi4.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/toxi4.png',
     username: 'Toxu4',
     startDate: new Date(2006, 9),
     endDate: null,
@@ -31,16 +31,16 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/130913155914/160721162918/dig_stay_200x200.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/dig_stay_200x200.png',
     username: 'k206i',
     startDate: new Date(2007, 1),
     endDate: null,
     achievements: [
-      'papa', 'kirovsk', 'micromachines', 'darts', 'collective'
+      'papa', 'kirovsk', 'micromachines', 'collective'
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/160722163041/160722175600/vasya.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/vasya.png',
     username: 'Отец Василий',
     startDate: new Date(2007, 4),
     endDate: null,
@@ -49,7 +49,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/160722163041/160722185916/kostia.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/kostia.png',
     username: 'mishenkovks',
     startDate: new Date(2009, 9),
     endDate: null,
@@ -58,7 +58,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/160404192515/160722172516/dd.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/dd.png',
     username: 'DD',
     startDate: new Date(2011, 8),
     endDate: new Date(2017, 8),
@@ -67,7 +67,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/141121185532/160722170813/stepan.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/stepan.png',
     username: 'krabishe',
     startDate: new Date(2011, 3),
     endDate: new Date(2016, 6),
@@ -76,7 +76,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/160722163041/160722180932/mitia.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/mitia.png',
     username: 'Mike Camino',
     startDate: new Date(2008, 8),
     endDate: new Date(2013, 9),
@@ -85,7 +85,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/130913155914/160725162340/21.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/21.png',
     username: 'Иринка',
     startDate: new Date(2011, 10),
     endDate: new Date(2017, 7),
@@ -94,7 +94,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/160722163041/160722180057/kalan.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/kalan.png',
     username: 'kalan',
     startDate: new Date(2013, 5),
     endDate: new Date(2017, 6),
@@ -103,7 +103,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/140728151003/160722165818/kate1.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/kate1.png',
     username: 'Kathy V',
     startDate: new Date(2014, 1),
     endDate: new Date(2016, 7),
@@ -112,7 +112,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s1.afisha-eda.ru/StaticContent/Files/160722163041/160722174744/olya.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/olya.png',
     username: 'olyakirgizova',
     startDate: new Date(2014, 5),
     endDate: new Date(2017, 2),
@@ -121,7 +121,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/130913155914/160722163957/kate.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/kate.png',
     username: 'Госпожа',
     startDate: new Date(2013, 9),
     endDate: new Date(2016, 1),
@@ -130,7 +130,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/160722163041/160722174421/nik.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/nik.png',
     username: 'nfirex',
     startDate: new Date(2011, 5),
     endDate: new Date(2013, 10),
@@ -139,7 +139,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/160722163041/160722175221/danis.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/danis.png',
     username: 'Иршатыч',
     startDate: new Date(2010, 9),
     endDate: new Date(2013, 3),
@@ -148,7 +148,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/150310173804/160722171343/max.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/max.png',
     username: 'busysumm3r',
     startDate: new Date(2015, 0),
     endDate: new Date(2017, 8),
@@ -157,7 +157,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/150306143755/160902131044/Slice.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/Slice.png',
     username: 'Просто Рудковский',
     startDate: new Date(2015, 8),
     endDate: null,
@@ -166,7 +166,7 @@ export const citizens = [
     ]
   },
   {
-    userpic: 'http://s2.afisha-eda.ru/StaticContent/Files/131001172704/160722165414/vlada.png',
+    userpic: 'http://k206i.ru/static/tupichok/userpics/vlada.png',
     username: 'Влада',
     startDate: new Date(2014, 10),
     endDate: new Date(2016, 2),
