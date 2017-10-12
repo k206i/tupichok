@@ -126,7 +126,7 @@ export const citizens = [
     startDate: new Date(2013, 9),
     endDate: new Date(2016, 1),
     achievements: [
-      'kirovsk', 'collective'
+      'shkololo', 'kirovsk', 'collective'
     ]
   },
   {
@@ -162,7 +162,7 @@ export const citizens = [
     startDate: new Date(2015, 8),
     endDate: null,
     achievements: [
-      'fail', 'kirovsk', 'micromachines', 'hernia'
+      'shkololo', 'fail', 'kirovsk', 'micromachines', 'hernia'
     ]
   },
   {

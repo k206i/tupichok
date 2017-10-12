@@ -40,6 +40,16 @@ export default function UserList(props) {
           ? 'green'
           : null;
 
+    if (currentUserLevel >= 2) {
+      user.achievements.push('two-year');
+    }
+    if (currentUserLevel >= 5) {
+      user.achievements.push('five-year');
+    }
+    if (currentUserLevel >= 10) {
+      user.achievements.push('ten-year');
+    }
+
     // Генерация ачивок
     let achievements = user.achievements.map((achievement, i) => {
 
@@ -88,36 +98,6 @@ export default function UserList(props) {
         </div>
 
         {achievements}
-
-        {currentUserLevel >= 2 &&
-        <div className='achievement achievement_two-year'>
-          <div className='achievement__text'
-               dangerouslySetInnerHTML={{
-                 __html: storageAchievementData.find((element) => (
-                   element.name == 'two-year'
-                 )).text
-               }}/>
-        </div>}
-
-        {currentUserLevel >= 5 &&
-        <div className='achievement achievement_five-year'>
-          <div className='achievement__text'
-               dangerouslySetInnerHTML={{
-                 __html: storageAchievementData.find((element) => (
-                   element.name == 'five-year'
-                 )).text
-               }}/>
-        </div>}
-
-        {currentUserLevel >= 10 &&
-        <div className='achievement achievement_ten-year'>
-          <div className='achievement__text'
-               dangerouslySetInnerHTML={{
-                 __html: storageAchievementData.find((element) => (
-                   element.name == 'ten-year'
-                 )).text
-               }}/>
-        </div>}
 
       </div>
     )

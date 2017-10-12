@@ -17,7 +17,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: 'v' + Date.now() + 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {

@@ -1,5 +1,10 @@
 export const storageAchievementData = [
   {
+    name: 'shkololo',
+    image: 'http://k206i.ru/static/tupichok/achievements/shkololo.png',
+    text: 'ШКОЛОЛО!<br />пришёл работать<br />в афишу, в возрасте<br />менее 24 лет',
+  },
+  {
     name: 'father',
     image: 'http://k206i.ru/static/tupichok/achievements/Untitled-5.png',
     text: 'ОТЕЦ!<br />за двух и более детей',
