@@ -17,8 +17,8 @@ export default class UserList extends PureComponent {
   componentDidMount() {
     (async () => {
       this.setState({
-        citizens: await fetchJSON('../../../dataSource/UserListData.json'),
-        storageAchievementData: await fetchJSON('../../../dataSource/StorageAchievementData.json'),
+        citizens: await fetchJSON('dataSource/UserListData.json'),
+        storageAchievementData: await fetchJSON('dataSource/StorageAchievementData.json'),
       });
     })();
   }

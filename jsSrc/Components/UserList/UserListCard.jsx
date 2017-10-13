@@ -93,5 +93,5 @@ export default function UserListCard(props) {
 
 UserListCard.propTypes = {
   user: PropTypes.object.isRequired,
-  storageAchievementData: PropTypes.object.isRequired,
+  storageAchievementData: PropTypes.array.isRequired,
 };

@@ -16,9 +16,9 @@ export default class Storage extends PureComponent {
   componentDidMount() {
     (async () => {
       this.setState({
-        storageAchievementData: await fetchJSON('../../../dataSource/storageAchievementData.json'),
-        storageVideoData: await fetchJSON('../../../dataSource/storageVideoData.json'),
-        storagePhotoData: await fetchJSON('../../../dataSource/storagePhotoData.json'),
+        storageAchievementData: await fetchJSON('dataSource/StorageAchievementData.json'),
+        storageVideoData: await fetchJSON('dataSource/StorageVideoData.json'),
+        storagePhotoData: await fetchJSON('dataSource/StoragePhotoData.json'),
       });
     })();
   }
@@ -34,8 +34,6 @@ export default class Storage extends PureComponent {
     if (storageAchievementData
       && storageVideoData
       && storagePhotoData) {
-
-      console.log(storageAchievementData, '<<<---');
 
       let photoStoreArr = storagePhotoData.map((photo) => (
         <li className='storage__list-item'
