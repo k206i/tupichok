@@ -18,4 +18,6 @@ export const APP_READY_CSS_CLASS = 'app_loaded';
 /**
  * Data/View константы
  */
-export const DEFAULT_TAB = 'userList';
+export const USER_LIST_TAB = 'userList';
+export const STORAGE_TAB = 'storage';
+export const DEFAULT_TAB = USER_LIST_TAB;

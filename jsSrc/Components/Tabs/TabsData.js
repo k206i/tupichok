@@ -2,13 +2,15 @@
  * Табы на странице. Ну, чем богаты, тем и рады.
  */
 
+import * as constants from '../../Constants/index';
+
 export const tabsData = [
   {
-    tabName: 'userList',
+    tabName: constants.USER_LIST_TAB,
     tabLabel: 'список',
   },
   {
-    tabName: 'storage',
+    tabName: constants.STORAGE_TAB,
     tabLabel: 'склад',
   }
 ];

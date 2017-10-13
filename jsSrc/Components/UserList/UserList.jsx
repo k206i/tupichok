@@ -2,110 +2,68 @@
  * Генерация списка тупикчан с ачивками и всеми делами.
  */
 
-import React from 'react';
-import {citizens} from './UserListData';
-import {storageAchievementData} from '../Storage/StorageAchievementData';
+import React, {PureComponent} from 'react';
+import { fetchJSON } from '../../Middleware/utils';
+import UserListCard from './UserListCard';
 
-export default function UserList(props) {
 
-  let sortcitizens = (a, b) => {
-    const currentDateA = (!a.endDate)
-      ? new Date()
-      : a.endDate;
+export default class UserList extends PureComponent {
 
-    const currentDateB = (!b.endDate)
-      ? new Date()
-      : b.endDate;
-
-    return  (currentDateB.getTime() - b.startDate.getTime()) - (currentDateA.getTime() - a.startDate.getTime());
+  state = {
+    citizens: null,
+    storageAchievementData: null,
   };
 
-  citizens.sort(sortcitizens);
+  componentDidMount() {
+    (async () => {
+      this.setState({
+        citizens: await fetchJSON('../../../dataSource/UserListData.json'),
+        storageAchievementData: await fetchJSON('../../../dataSource/StorageAchievementData.json'),
+      });
+    })();
+  }
 
-  // Генерация карточки каждого тупикчанина
-  let citizensArr = citizens.map((user, i) => {
+  render() {
 
-    const currentDate = (!user.endDate)
-      ? new Date()
-      : user.endDate;
+    const {
+      citizens,
+      storageAchievementData,
+    } = this.state;
 
-    // Уровень пользователя == количеству полных лет с момента начала работы в Тупичке
-    const currentUserLevel =  Math.floor((currentDate.getTime() - user.startDate.getTime()) / 31536000000);
+    if (citizens) {
 
-    const levelColor = currentUserLevel >= 10
-      ? 'orange'
-      : currentUserLevel >= 5
-        ? 'red'
-        : currentUserLevel >= 2
-          ? 'green'
-          : null;
+      let sortcitizens = (a, b) => {
 
-    if (currentUserLevel >= 2) {
-      user.achievements.push('two-year');
-    }
-    if (currentUserLevel >= 5) {
-      user.achievements.push('five-year');
-    }
-    if (currentUserLevel >= 10) {
-      user.achievements.push('ten-year');
-    }
+        const startDateA = new Date(a.startDate);
+        const currentDateA = (!a.endDate)
+          ? new Date()
+          : new Date(a.endDate);
 
-    // Генерация ачивок
-    let achievements = user.achievements.map((achievement, i) => {
+        const startDateB = new Date(b.startDate);
+        const currentDateB = (!b.endDate)
+          ? new Date()
+          : new Date(b.endDate);
 
-      let achievementData = storageAchievementData.find((element) => (
-        element.name == achievement
+        return (currentDateB.getTime() - startDateB.getTime()) - (currentDateA.getTime() - startDateA.getTime());
+      };
+
+      citizens.sort(sortcitizens);
+
+      // Генерация карточки каждого тупикчанина
+      let citizensArr = citizens.map((user, i) => (
+        <UserListCard user={user}
+                      storageAchievementData={storageAchievementData}
+                      key={`${user.username}${i}`} />
       ));
 
       return (
-        <div className='achievement'
-             style={{
-               backgroundImage: `url(${achievementData.image})`,
-             }}
-             key={`${achievement}${i}`}>
-          <div className='achievement__text'
-               dangerouslySetInnerHTML={{
-                 __html: achievementData.text
-               }}/>
+        <div className='citizen__tab-pad'
+             id='userList'>
+          {citizensArr}
         </div>
       )
-      }
-    );
-
-    return (
-      <div className='citizen' key={`${user.username}${i}`}>
-        <img className='citizen__userpic' src={user.userpic} />
-        <div className={`citizen__status ${
-          !user.endDate
-            ? 'online'
-            : null
-          }`} />
-        <div className='citizen__level'>
-          Уровень
-          <span className={`citizen__level-count ${levelColor}`}>
-            {currentUserLevel}
-          </span>
-        </div>
-        <div className='citizen__username'>
-          {user.username}
-        </div>
-        <div className='citizen__status-text'>
-          в сети: с {`${user.startDate.getMonth() + 1}.${user.startDate.getFullYear()} `}
-          {user.endDate &&
-            <span>
-              по {`${user.endDate.getMonth() + 1}.${user.endDate.getFullYear()}`}
-            </span>}
-        </div>
-
-        {achievements}
-
-      </div>
-    )
-  });
-  
-  return (
-    <div className='citizen__tab-pad'>
-      {citizensArr}
-    </div>
-  )
+    } else {
+      return null;
+    }
+  }
 }

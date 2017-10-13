@@ -10,13 +10,13 @@ import UserList from './UserList/UserList';
 import Storage from './Storage/Storage';
 import Tabs from './Tabs/Tabs';
 import * as pageActions from '../Actions/pageActions';
-import {APP_READY_CSS_CLASS} from '../Constants/';
+import * as constants from '../Constants/';
 
 class App extends PureComponent {
 
   componentDidMount() {
     setTimeout(() => {
-      MAIN_NODES.body.classList.add(APP_READY_CSS_CLASS);
+      MAIN_NODES.body.classList.add(constants.APP_READY_CSS_CLASS);
     }, 500);
 
   }
@@ -32,10 +32,10 @@ class App extends PureComponent {
 
     let tabToShow;
     switch (activeTab) {
-      case 'userList':
+      case constants.USER_LIST_TAB:
         tabToShow = <UserList />;
         break;
-      case 'storage':
+      case constants.STORAGE_TAB:
         tabToShow = <Storage />;
         break;
       default:
@@ -45,10 +45,11 @@ class App extends PureComponent {
 
     return (
       <div className='app'>
-        <div className='tupichok'>
+        <div className={`tupichok tupichok_${activeTab}`}>
           <Tabs setTab={setTab}
                 currentTabName={activeTab} />
-          {tabToShow}
+          <UserList />
+          <Storage />
         </div>
       </div>
     );
