@@ -1,7 +1,7 @@
   [{
     "userpic": "https://i.imgur.com/kLkaCGc.png",
-    "username": "driwetka",
-    "startDate": "2016, 9",
+    "username": "Daniil Sokolyuk",
+    "startDate": "2016, 9, 1",
     "endDate": null,
     "achievements": [
       "shkololo"
@@ -9,8 +9,8 @@
   },{
     "userpic": "http://k206i.ru/static/tupichok/userpics/sveta.png",
     "username": "driwetka",
-    "startDate": "2010, 10",
-    "endDate": "2014, 10",
+    "startDate": "2010, 10, 1",
+    "endDate": "2014, 10, 1",
     "achievements": [
       "collective"
     ]
@@ -18,7 +18,7 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/kolyan.png",
     "username": "kompot",
-    "startDate": "2006, 9",
+    "startDate": "2006, 9, 1",
     "endDate": null,
     "achievements": [
       "kirovsk", "micromachines", "darts", "collective"
@@ -27,7 +27,7 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/toxi4.png",
     "username": "Toxu4",
-    "startDate": "2006, 10",
+    "startDate": "2006, 10, 1",
     "endDate": null,
     "achievements": [
       "papa", "micromachines", "darts"
@@ -36,7 +36,7 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/dig_stay_200x200.png",
     "username": "k206i",
-    "startDate": "2007, 2",
+    "startDate": "2007, 2, 1",
     "endDate": null,
     "achievements": [
       "papa", "kirovsk", "micromachines", "collective"
@@ -45,7 +45,7 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/vasya.png",
     "username": "Отец Василий",
-    "startDate": "2007, 5",
+    "startDate": "2007, 5, 1",
     "endDate": null,
     "achievements": [
       "papa", "father"
@@ -54,7 +54,7 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/kostia.png",
     "username": "mishenkovks",
-    "startDate": "2009, 10",
+    "startDate": "2009, 10, 1",
     "endDate": null,
     "achievements": [
       "papa"
@@ -63,8 +63,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/dd.png",
     "username": "DD",
-    "startDate": "2011, 9",
-    "endDate": "2017, 9",
+    "startDate": "2011, 9, 1",
+    "endDate": "2017, 9, 1",
     "achievements": [
       "hernia"
     ]
@@ -72,8 +72,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/stepan.png",
     "username": "krabishe",
-    "startDate": "2011, 4",
-    "endDate": "2016, 7",
+    "startDate": "2011, 4, 1",
+    "endDate": "2016, 7, 1",
     "achievements": [
       "yandex", "papa", "father"
     ]
@@ -81,8 +81,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/mitia.png",
     "username": "Mike Camino",
-    "startDate": "2008, 9",
-    "endDate": "2013, 10",
+    "startDate": "2008, 9, 1",
+    "endDate": "2013, 10, 1",
     "achievements": [
       "indecisive", "indecisive"
     ]
@@ -90,8 +90,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/21.png",
     "username": "Иринка",
-    "startDate": "2011, 11",
-    "endDate": "2017, 8",
+    "startDate": "2011, 11, 1",
+    "endDate": "2017, 8, 1",
     "achievements": [
       "alone", "collective", "papa"
     ]
@@ -99,8 +99,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/kalan.png",
     "username": "kalan",
-    "startDate": "2013, 6",
-    "endDate": "2017, 7",
+    "startDate": "2013, 6, 1",
+    "endDate": "2017, 7, 1",
     "achievements": [
       "yankee", "collective", "hernia", "micromachines", "papa"
     ]
@@ -108,8 +108,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/kate1.png",
     "username": "Kathy V",
-    "startDate": "2014, 2",
-    "endDate": "2016, 8",
+    "startDate": "2014, 2, 1",
+    "endDate": "2016, 8, 1",
     "achievements": [
       "kirovsk", "shkololo"
     ]
@@ -117,8 +117,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/olya.png",
     "username": "olyakirgizova",
-    "startDate": "2014, 6",
-    "endDate": "2017, 3",
+    "startDate": "2014, 6, 1",
+    "endDate": "2017, 3, 1",
     "achievements": [
       "collective"
     ]
@@ -126,8 +126,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/kate.png",
     "username": "Госпожа",
-    "startDate": "2013, 10",
-    "endDate": "2016, 2",
+    "startDate": "2013, 10, 1",
+    "endDate": "2016, 2, 1",
     "achievements": [
       "shkololo", "kirovsk", "collective"
     ]
@@ -135,8 +135,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/nik.png",
     "username": "nfirex",
-    "startDate": "2011, 6",
-    "endDate": "2013, 11",
+    "startDate": "2011, 6, 1",
+    "endDate": "2013, 11, 1",
     "achievements": [
       "kirovsk", "micromachines", "collective"
     ]
@@ -144,8 +144,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/danis.png",
     "username": "Иршатыч",
-    "startDate": "2010, 10",
-    "endDate": "2013, 4",
+    "startDate": "2010, 10, 1",
+    "endDate": "2013, 4, 1",
     "achievements": [
       "hernia", "micromachines", "papa", "father"
     ]
@@ -153,8 +153,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/max.png",
     "username": "busysumm3r",
-    "startDate": "2015, 1",
-    "endDate": "2017, 9",
+    "startDate": "2015, 1, 1",
+    "endDate": "2017, 9, 1",
     "achievements": [
       "radio", "hernia", "micromachines"
     ]
@@ -162,7 +162,7 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/Slice.png",
     "username": "Просто Рудковский",
-    "startDate": "2015, 9",
+    "startDate": "2015, 9, 1",
     "endDate": null,
     "achievements": [
       "shkololo", "fail", "kirovsk", "micromachines", "hernia"
@@ -171,8 +171,8 @@
   {
     "userpic": "http://k206i.ru/static/tupichok/userpics/vlada.png",
     "username": "Влада",
-    "startDate": "2014, 11",
-    "endDate": "2016, 3",
+    "startDate": "2014, 11, 1",
+    "endDate": "2016, 3, 1",
     "achievements": [
       "yandex", "hernia"
     ]
