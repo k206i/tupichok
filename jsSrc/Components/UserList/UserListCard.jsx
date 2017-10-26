@@ -81,9 +81,13 @@ export default function UserListCard(props) {
         в сети: с {`${new Date(user.startDate).getMonth() + 1}.${new Date(user.startDate).getFullYear()} `}
         {user.endDate &&
         <span>
-              по {`${new Date(user.endDate).getMonth() + 1}.${new Date(user.endDate).getFullYear()}`}
-            </span>}
+          по {`${new Date(user.endDate).getMonth() + 1}.${new Date(user.endDate).getFullYear()}`}
+        </span>}
       </div>
+      {user.comment &&
+        <p className="citizen__comment">
+          {user.comment}
+        </p>}
 
       {achievements}
 

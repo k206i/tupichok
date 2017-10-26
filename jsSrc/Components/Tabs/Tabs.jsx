@@ -1,3 +1,7 @@
+/**
+ * Таб. Типа, навигационный элемент.
+ */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import {tabsData} from './TabsData';

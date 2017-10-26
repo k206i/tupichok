@@ -29,8 +29,9 @@
     "username": "Toxu4",
     "startDate": "2006, 10, 1",
     "endDate": null,
+    "comment": "Случайно удалил с продакшена более 50 тысяч пользовательских комментариев",
     "achievements": [
-      "papa", "micromachines", "darts"
+      "papa", "fail", "micromachines", "darts"
     ]
   },
   {
@@ -38,8 +39,9 @@
     "username": "k206i",
     "startDate": "2007, 2, 1",
     "endDate": null,
+    "comment": "Случайно разместил свои баннеры на 500-х страницах продакшена. Заработал на этом 2$",
     "achievements": [
-      "papa", "kirovsk", "micromachines", "collective"
+      "papa", "fail", "kirovsk", "micromachines", "collective"
     ]
   },
   {
@@ -111,7 +113,7 @@
     "startDate": "2014, 2, 1",
     "endDate": "2016, 8, 1",
     "achievements": [
-      "kirovsk", "shkololo"
+      "papa", "kirovsk", "shkololo"
     ]
   },
   {
@@ -164,6 +166,7 @@
     "username": "Просто Рудковский",
     "startDate": "2015, 9, 1",
     "endDate": null,
+    "comment": "Разместил в тестовых данных свою аватарку и случано запостил эти данные на главной продакшена",
     "achievements": [
       "shkololo", "fail", "kirovsk", "micromachines", "hernia"
     ]

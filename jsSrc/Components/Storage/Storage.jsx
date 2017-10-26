@@ -16,9 +16,9 @@ export default class Storage extends PureComponent {
   componentDidMount() {
     (async () => {
       this.setState({
-        storageAchievementData: await fetchJSON('dataSource/StorageAchievementData.json'),
-        storageVideoData: await fetchJSON('dataSource/StorageVideoData.json'),
-        storagePhotoData: await fetchJSON('dataSource/StoragePhotoData.json'),
+        storageAchievementData: await fetchJSON('dataSource/StorageAchievementData.json?v=t' + Date.now()),
+        storageVideoData: await fetchJSON('dataSource/StorageVideoData.json?v=t' + Date.now()),
+        storagePhotoData: await fetchJSON('dataSource/StoragePhotoData.json?v=t' + Date.now()),
       });
     })();
   }
