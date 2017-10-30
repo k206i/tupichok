@@ -26,22 +26,10 @@ class App extends PureComponent {
     const {
       activeTab,
     } = this.props.tupichokState;
+
     const {
       setTab,
     } = this.props.pageActions;
-
-    let tabToShow;
-    switch (activeTab) {
-      case constants.USER_LIST_TAB:
-        tabToShow = <UserList />;
-        break;
-      case constants.STORAGE_TAB:
-        tabToShow = <Storage />;
-        break;
-      default:
-        tabToShow = <UserList />;
-        break;
-    }
 
     return (
       <div className='app'>

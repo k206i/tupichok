@@ -29,3 +29,18 @@ export async function fetchJSON(url, params = {}) {
     console.error('Вот это вот пошло не так: ', error);
   }
 }
+
+
+/**
+ * Конвертирует строку типа "2016, 9, 2" в объект Date
+ * @param string
+ * @returns {Date}
+ */
+export function createDateFromString(string) {
+  const stringArr = string.replace(/ +/g, '').split(',');
+  return new Date(
+    +stringArr[0],
+    +stringArr[1] - 1,
+    +stringArr[2]
+  );
+}

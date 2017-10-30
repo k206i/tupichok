@@ -4,6 +4,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { createDateFromString } from '../../Middleware/utils';
 
 export default function UserListCard(props) {
 
@@ -12,13 +13,17 @@ export default function UserListCard(props) {
     storageAchievementData,
   } = props;
 
-  const startDate = new Date(user.startDate);
+
+  const startDate = createDateFromString(user.startDate);
   const currentDate = (!user.endDate)
     ? new Date()
-    : new Date(user.endDate);
+    : createDateFromString(user.endDate);
 
-  // Уровень пользователя == количеству полных лет с момента начала работы в Тупичке
-  const currentUserLevel = Math.floor((currentDate.getTime() - startDate.getTime()) / 31536000000);
+  // Уровень пользователя == количеству полных лет
+  // с момента начала работы в Тупичке
+  const currentUserLevel = Math.floor(
+    (currentDate.getTime() - startDate.getTime()
+    ) / 31536000000);
 
   const levelColor = currentUserLevel >= 10
     ? 'orange'
@@ -28,6 +33,7 @@ export default function UserListCard(props) {
         ? 'green'
         : null;
 
+  // Автоматические ачивки, за выслугу лет
   if (currentUserLevel >= 2) {
     user.achievements.push('two-year');
   }
@@ -38,7 +44,7 @@ export default function UserListCard(props) {
     user.achievements.push('ten-year');
   }
 
-  // Генерация ачивок
+  // Генерация ачивок из storageAchievementData
   let achievements = user.achievements.map((achievement, i) => {
 
       let achievementData = storageAchievementData.find((element) => (
@@ -54,7 +60,7 @@ export default function UserListCard(props) {
           <div className='achievement__text'
                dangerouslySetInnerHTML={{
                  __html: achievementData.text
-               }}/>
+               }} />
         </div>
       )
     }
@@ -78,10 +84,18 @@ export default function UserListCard(props) {
         {user.username}
       </div>
       <div className='citizen__status-text'>
-        в сети: с {`${new Date(user.startDate).getMonth() + 1}.${new Date(user.startDate).getFullYear()} `}
+        в сети: с {`${
+          createDateFromString(user.startDate).getMonth() + 1
+        }.${
+          createDateFromString(user.startDate).getFullYear()
+        } `}
         {user.endDate &&
         <span>
-          по {`${new Date(user.endDate).getMonth() + 1}.${new Date(user.endDate).getFullYear()}`}
+          по {`${
+            createDateFromString(user.endDate).getMonth() + 1
+          }.${
+            createDateFromString(user.endDate).getFullYear()
+          }`}
         </span>}
       </div>
       {user.comment &&
