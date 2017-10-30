@@ -1,5 +1,52 @@
 [
   {
+    "userpic": "http://k206i.ru/static/tupichok/userpics/katiaS.jpg",
+    "username": "Ekaterina Sakharova",
+    "startDate": "2016, 6, 9",
+    "endDate": "2017, 8, 1",
+    "achievements": [
+      "shkololo"
+    ]
+  },
+  {
+    "userpic": "http://k206i.ru/static/tupichok/userpics/felix.jpg",
+    "username": "Feliks K",
+    "startDate": "2016, 4, 1",
+    "endDate": "2017, 8, 1",
+    "comment": "Много раз брал на себя ответственность за «пьяный деплой»",
+    "achievements": [
+      "radio", "fail"
+    ]
+  },
+  {
+    "userpic": "http://k206i.ru/static/tupichok/userpics/barin.jpg",
+    "username": "Мажор",
+    "startDate": "2015, 9, 1",
+    "endDate": "2017, 8, 1",
+    "achievements": [
+      "shkololo", "kirovsk", "collective"
+    ]
+  },
+  {
+    "userpic": "http://k206i.ru/static/tupichok/userpics/vovan.jpg",
+    "username": "Вовчик",
+    "startDate": "2016, 7, 1",
+    "endDate": "2017, 9, 1",
+    "comment": "Случайно проставил спектаклям не те места, и у пользователей в билетах были не правильные адреса театров. Касса потеряла 50к.",
+    "achievements": [
+      "shkololo", "hernia", "fail"
+    ]
+  },
+  {
+    "userpic": "http://k206i.ru/static/tupichok/userpics/ilia.jpg",
+    "username": "Обухов Илья",
+    "startDate": "2016, 4, 1",
+    "endDate": null,
+    "achievements": [
+      "papa"
+    ]
+  },
+  {
     "userpic": "http://k206i.ru/static/tupichok/userpics/dasha.jpg",
     "username": "Дарья Черткова",
     "startDate": "2016, 6, 16",
@@ -41,7 +88,7 @@
     "username": "Toxu4",
     "startDate": "2006, 10, 1",
     "endDate": null,
-    "comment": "Случайно удалил с продакшена более 50 тысяч пользовательских комментариев",
+    "comment": "Случайно удалил все пользовательские комментарии",
     "achievements": [
       "papa", "fail", "micromachines", "darts"
     ]
